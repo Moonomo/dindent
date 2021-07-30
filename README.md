@@ -206,7 +206,43 @@ The recommended way to use Dindent is through [Composer](https://getcomposer.org
 ```json
 {
     "require": {
-        "gajus/dindent": "2.0.*"
+        "gajus/dindent": "2.3.1"
     }
+}
+```
+
+**UPDATE**: Since [original repository](https://github.com/gajus/dindent) has issue with version 2.3.0, here's how to install it with composer properly.
+
+```json
+{
+    "require": {
+        "gajus/dindent": "2.3.1"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "gajus/dindent",
+                "version": "2.3.1",
+                "dist": {
+                    "url": "https://github.com/Moonomo/dindent/archive/refs/tags/2.3.1.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "php": ">=5.5",
+                    "ext-mbstring": "*"
+                },
+                "require-dev": {
+                    "php-coveralls/php-coveralls": "2.4.3",
+                    "phpunit/phpunit": ">7 <8"
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Gajus\\Dindent\\": "src/"
+                    }
+                }
+            }
+        }
+    ]
 }
 ```
