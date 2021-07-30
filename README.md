@@ -224,6 +224,12 @@ The recommended way to use Dindent is through [Composer](https://getcomposer.org
             "package": {
                 "name": "gajus/dindent",
                 "version": "2.3.1",
+                "authors": [
+                    {
+                        "name": "Gajus Kuizinas",
+                        "email": "gk@anuary.com"
+                    }
+                ],
                 "dist": {
                     "url": "https://github.com/Moonomo/dindent/archive/refs/tags/2.3.1.zip",
                     "type": "zip"
