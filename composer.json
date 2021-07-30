@@ -1,9 +1,9 @@
 {
 	"name": "gajus/dindent",
-	"version": "2.3.0",
+	"version": "2.3.1",
 	"description": "HTML indentation library for development and testing.",
 	"keywords": ["HTML", "indent", "format"],
-	"homepage": "https://github.com/gajus/dindent",
+	"homepage": "https://github.com/Moonomo/dindent",
 	"type": "library",
 	"license": "BSD-3-Clause",
 	"authors": [
@@ -13,12 +13,12 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3",
+		"php": ">=5.5",
 		"ext-mbstring": "*"
 	},
 	"require-dev": {
-		"php-coveralls/php-coveralls": "^1.1.0",
-		"phpunit/phpunit": "4.*"
+		"php-coveralls/php-coveralls": "2.4.3",
+		"phpunit/phpunit": ">7 <8"
 	},
 	"autoload": {
 		"psr-4": {
